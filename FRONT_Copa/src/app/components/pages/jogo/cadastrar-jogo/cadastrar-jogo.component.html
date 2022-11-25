@@ -1,0 +1,17 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title> Cadastrar Jogo </mat-card-title>
+  </mat-card-header>
+  <mat-card-content> </mat-card-content>
+  <label for="">Time 1</label>
+  <select [(ngModel)]="selecaoA">
+    <option *ngFor="let selecao of selecoes" value="{{selecao.Id}}">{{selecao.nome}}</option>
+  </select>
+  
+  <label for="">Time 2</label>
+  <select [(ngModel)]="selecaoB">
+  <option *ngFor="let selecao of selecoes" value="{{selecao.Id}}">{{selecao.nome}}</option>
+  </select>
+
+  <button (click)="criarJogo()">Criar Jogo</button>
+</mat-card>

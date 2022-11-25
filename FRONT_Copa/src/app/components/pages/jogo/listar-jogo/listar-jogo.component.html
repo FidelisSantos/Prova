@@ -1,0 +1,7 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title> Listar Jogos </mat-card-title>
+  </mat-card-header>
+  <mat-card-content> </mat-card-content>
+  <p *ngFor="let jogo of jogos">{{jogo.selecaoA.nome}}-{{jogo.selecaoAPlacar}} x  {{jogo.selecaoBPlacar}}-{{jogo.selecaoB.nome}}   </p>
+</mat-card>
